@@ -54,7 +54,9 @@ export const Products = () => {
         </div>
 
         <div>
-          <h3 onClick={() => navigate("/product-management")}>New</h3>
+          <h3 className="new" onClick={() => navigate("/product-management")}>
+            New
+          </h3>
         </div>
       </div>
       <div className="product-list">

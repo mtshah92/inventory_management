@@ -4,3 +4,6 @@
   align-items: center;
   border-bottom: 1px solid;
 }
+.new:hover {
+  cursor: pointer;
+}
