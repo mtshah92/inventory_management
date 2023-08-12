@@ -39,7 +39,15 @@ export const InventoryProvider = ({ children }) => {
       data = data.filter((item) => item.stock < 11);
     }
     if (sort === "name") {
-      data = [...data].sort((a, b) => (a.name - b.name ? 1 : -1));
+      data = [...data].sort((a, b) => {
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      });
     }
     if (sort === "price") {
       data = [...data].sort((a, b) => a.price - b.price);
