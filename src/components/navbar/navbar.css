@@ -1,0 +1,8 @@
+.navbar {
+  width: 20%;
+  height: 100vh;
+  background-color: black;
+}
+.nav-link {
+  color: white;
+}

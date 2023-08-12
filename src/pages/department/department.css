@@ -1,0 +1,12 @@
+.departments {
+  /* display: flex; */
+}
+
+.each-department {
+  border: 1px solid;
+  margin: 0.5rem;
+  /* padding: 0.5rem; */
+}
+.each-department:hover {
+  cursor: pointer;
+}
